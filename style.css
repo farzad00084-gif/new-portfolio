@@ -2,9 +2,28 @@
   --text: color: #888888;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
 body {
   background-color: #121212;
+  overflow-x: hidden;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -156,6 +175,92 @@ nav {
   color: white;
 }
 
+/* Skills section */
+.skills-page {
+  margin: 100px 185px;
+  text-align: center;
+}
+.skills-page h2 {
+  font-family: sans-serif;
+  color: white;
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+.container-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background-color: #1c1c1c;
+  border: 1px solid #3d3d3d;
+  border-radius: 15px;
+  padding: 18px 25px;
+  text-align: left;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+.skill-item:hover {
+  transform: translateX(8px);
+  border-color: #d4af37;
+}
+.skill-icon {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background-color: #3d3d3d;
+  color: #d4af37;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+.skill-item:hover .skill-icon {
+  background-color: #2a2a2a;
+}
+.skill-info {
+  flex-grow: 1;
+}
+.skill-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+.skill-top p {
+  font-family: sans-serif;
+  color: white;
+  font-size: 17px;
+  margin: 0;
+}
+.skill-top span {
+  font-family: sans-serif;
+  color: #d4af37;
+  font-size: 14px;
+}
+.skill-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #3d3d3d;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.skill-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #8a7130, #d4af37);
+  border-radius: 10px;
+}
+
 /* Education & Languages section */
 .education-page {
   margin: 100px 185px;
@@ -254,6 +359,14 @@ nav {
   color: #888;
 }
 
+#About,
+#Education,
+#Skills,
+#Projects,
+#Contact {
+  scroll-margin-top: 90px;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -264,4 +377,137 @@ footer p {
   font-family: sans-serif;
   color: #888;
   font-size: 14px;
+}
+
+/* ============ Responsive ============ */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  .hero-page {
+    margin: 80px 60px;
+  }
+  .container-about {
+    margin: 80px 60px;
+  }
+  .projects-page,
+  .skills-page,
+  .education-page,
+  .contact-page {
+    margin: 80px 60px;
+  }
+  .container-skills {
+    max-width: 100%;
+  }
+}
+
+/* Tablets / large phones */
+@media (max-width: 768px) {
+  .container-nav {
+    flex-wrap: wrap;
+    gap: 10px;
+    row-gap: 12px;
+    justify-content: center;
+    text-align: center;
+  }
+  .container-nav ul {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero-page {
+    margin: 140px 30px 60px;
+    text-align: center;
+  }
+  .hero-page h1 {
+    font-size: 34px;
+    word-spacing: 6px;
+  }
+  .hero-page p {
+    font-size: 16px;
+  }
+  .container-about {
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 30px;
+    text-align: center;
+  }
+  .container-about img {
+    width: 220px;
+    height: 220px;
+  }
+  .container-about p {
+    width: 100%;
+  }
+  .projects-page,
+  .skills-page,
+  .education-page,
+  .contact-page {
+    margin: 60px 30px;
+  }
+  .projects-page h2,
+  .skills-page h2,
+  .contact-page h2 {
+    font-size: 28px;
+  }
+  .container-projects {
+    gap: 25px;
+  }
+  .project-card {
+    width: 100%;
+    max-width: 400px;
+  }
+  .container-education {
+    flex-direction: column;
+  }
+  .skill-item {
+    padding: 15px;
+    gap: 15px;
+  }
+  .skill-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 14px;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .container-nav {
+    padding: 10px;
+  }
+  .container-nav ul {
+    gap: 14px;
+  }
+  .container-nav a {
+    font-size: 15px;
+  }
+  .hero-page {
+    margin: 130px 20px 50px;
+  }
+  .hero-page h1 {
+    font-size: 26px;
+    word-spacing: 4px;
+  }
+  .container-about,
+  .projects-page,
+  .skills-page,
+  .education-page,
+  .contact-page {
+    margin: 50px 16px;
+  }
+  .container-about img {
+    width: 180px;
+    height: 180px;
+  }
+  .skill-top p {
+    font-size: 15px;
+  }
+  .skill-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .social-item {
+    padding: 12px 15px;
+  }
 }
