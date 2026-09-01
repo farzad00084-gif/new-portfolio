@@ -1,61 +1,83 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hi Im FARZAD</title>
+    <title>Farzad — Web Developer</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
   <body>
+    <script>
+      // Apply saved/system theme before paint to avoid a flash
+      (function () {
+        var saved = localStorage.getItem("theme");
+        var theme = saved || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+
     <nav>
       <div class="container-nav">
         <div>
           <strong>
             <ul>
-              <li>
-                <a href="#">FARZAD</a>
-              </li>
-            </ul></strong
-          >
+              <li><a href="#">FARZAD</a></li>
+            </ul>
+          </strong>
         </div>
         <div>
           <ul>
-            <li><a href="#About"> About</a></li>
+            <li><a href="#About">About</a></li>
             <li><a href="#Education">Education</a></li>
             <li><a href="#Skills">Skills</a></li>
             <li><a href="#Projects">Projects</a></li>
           </ul>
         </div>
-        <ul>
-          <li>
-            <a href="#Contact">Get In Touch</a>
-          </li>
-        </ul>
+        <div class="nav-right">
+          <a href="#Contact" class="btn btn-cta">Get In Touch</a>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark or light theme">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+          </button>
+        </div>
       </div>
     </nav>
     <!-- end of navbar -->
-    <section class="hero-page">
-      <button>Ready For Work</button>
-      <strong
-        ><h1>Hey, I'm Farzad. <br />I'm a Web Developer.</h1></strong
-      >
-      <em><p>I make Websites with great designs and functionality</p></em>
-      <a href="C:\Users\farza\Desktop\Ahmad_Farzad_Resume.pdf" download>
-        <button>Download CV</button>
-      </a>
+
+    <section class="hero-page reveal">
+      <div class="hero-text">
+        <button class="btn btn-status" type="button" disabled>
+          <span class="status-dot"></span>
+          Ready for work
+        </button>
+        <h1>Hey, I'm Farzad.<br />I'm a web developer.</h1>
+        <em><p>I make websites with great designs and functionality.</p></em>
+        <div class="hero-actions">
+          <a href="Ahmad_Farzad_Resume.pdf" download>
+            <button class="btn btn-primary" type="button">Download CV</button>
+          </a>
+          <a href="#Projects"><button class="btn btn-ghost" type="button">View Projects</button></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="images/portfolio1.jpg" alt="Portrait of Farzad" />
+      </div>
     </section>
     <!-- end of hero section  -->
-    <hr />
-    <section>
+
+    <div class="rule" role="separator"></div>
+
+    <section class="reveal">
       <div class="container-about">
-        <div>
-          <img
-            src="images/WhatsApp Image 2026-08-04 at 11.33.57 (1).jpeg"
-            alt=""
-          />
-        </div>
+        <!-- <div>
+          <img src="images/portfolio1.jpg" alt="" />
+        </div> -->
         <div id="About">
-          <button>About Me</button>
+          <h3>About me</h3>
           <p>
             Recently, I've been learning front-end web development, building
             hands-on skills in HTML, CSS, and JavaScript to create clean,
@@ -68,8 +90,10 @@
       </div>
     </section>
     <!-- end of about section -->
-    <hr />
-    <section id="Education" class="education-page">
+
+    <div class="rule" role="separator"></div>
+
+    <section id="Education" class="education-page reveal">
       <div class="container-education">
         <div class="education-card">
           <h3>Education</h3>
@@ -94,12 +118,14 @@
       </div>
     </section>
     <!-- end of education section -->
-    <hr />
-    <section id="Skills" class="skills-page">
+
+    <div class="rule" role="separator"></div>
+
+    <section id="Skills" class="skills-page reveal">
       <h2>My Skills</h2>
       <div class="container-skills">
-        <div class="skill-item">
-          <div class="skill-icon">Ux</div>
+        <div class="skill-item reveal-card" style="--delay: 0ms">
+          <div class="skill-icon"><i class="fa-brands fa-figma"></i></div>
           <div class="skill-info">
             <div class="skill-top">
               <p>UI/UX Design</p>
@@ -110,8 +136,8 @@
             </div>
           </div>
         </div>
-        <div class="skill-item">
-          <div class="skill-icon">Ht</div>
+        <div class="skill-item reveal-card" style="--delay: 70ms">
+          <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
           <div class="skill-info">
             <div class="skill-top">
               <p>HTML</p>
@@ -122,8 +148,8 @@
             </div>
           </div>
         </div>
-        <div class="skill-item">
-          <div class="skill-icon">Cs</div>
+        <div class="skill-item reveal-card" style="--delay: 140ms">
+          <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
           <div class="skill-info">
             <div class="skill-top">
               <p>CSS</p>
@@ -134,8 +160,8 @@
             </div>
           </div>
         </div>
-        <div class="skill-item">
-          <div class="skill-icon">Js</div>
+        <div class="skill-item reveal-card" style="--delay: 210ms">
+          <div class="skill-icon"><i class="fa-brands fa-square-js"></i></div>
           <div class="skill-info">
             <div class="skill-top">
               <p>JavaScript</p>
@@ -146,8 +172,8 @@
             </div>
           </div>
         </div>
-        <div class="skill-item">
-          <div class="skill-icon">Fe</div>
+        <div class="skill-item reveal-card" style="--delay: 280ms">
+          <div class="skill-icon"><i class="fa-brands fa-web-awesome"></i></div>
           <div class="skill-info">
             <div class="skill-top">
               <p>Frontend Development</p>
@@ -161,86 +187,97 @@
       </div>
     </section>
     <!-- end of skills section -->
-    <hr />
-    <section id="Projects" class="projects-page">
+
+    <div class="rule" role="separator"></div>
+
+    <section id="Projects" class="projects-page reveal">
       <h2>My Projects</h2>
       <div class="container-projects">
-        <div class="project-card">
+        <div class="project-card reveal-card" style="--delay: 0ms">
           <img src="images/Screenshot 2026-08-20 181834.png" alt="Project 1" />
           <h3>My First Portfolio</h3>
-          <p>This was my first attempt to make a Portfolio</p>
-          <a
-            href="https://my-portfolio-psi-lemon-90.vercel.app/"
-            target="_blank"
-            >View Project &#8599;</a
-          >
+          <p>This was my first attempt to make a portfolio.</p>
+          <a href="https://my-portfolio-psi-lemon-90.vercel.app/" target="_blank">View Project &#8599;</a>
         </div>
-        <div class="project-card">
+        <div class="project-card reveal-card" style="--delay: 90ms">
           <img src="images/Screenshot 2026-08-20 181717.png" alt="Project 2" />
-          <h3>NORTH ZONE TRAVEL AGENCY</h3>
-          <p>A Simple website for North Zone travel agency</p>
-          <a href="https://north-zone.vercel.app/" target="_blank"
-            >View Project &#8599;</a
-          >
+          <h3>North Zone Travel Agency</h3>
+          <p>A simple website for North Zone travel agency.</p>
+          <a href="https://north-zone.vercel.app/" target="_blank">View Project &#8599;</a>
         </div>
-        <div class="project-card">
+        <div class="project-card reveal-card" style="--delay: 180ms">
           <img src="images/image.png" alt="Project 3" />
-          <h3>Make Up online shop</h3>
-          <p>An online shop</p>
+          <h3>Make Up Online Shop</h3>
+          <p>An online shop.</p>
           <a href="#">View Project &#8599;</a>
         </div>
-        <div class="project-card">
+        <div class="project-card reveal-card" style="--delay: 270ms">
           <img src="images/Screenshot 2026-08-05 210635.png" alt="Project 4" />
           <h3>Mentor Selecting</h3>
-          <p>A mentor selection page</p>
-          <a href="https://figma-assignment-pied.vercel.app/" target="_blank"
-            >View Project &#8599;</a
-          >
+          <p>A mentor selection page.</p>
+          <a href="https://figma-assignment-pied.vercel.app/" target="_blank">View Project &#8599;</a>
         </div>
       </div>
     </section>
     <!-- end of projects section -->
-    <hr />
-    <section id="Contact" class="contact-page">
+
+    <div class="rule" role="separator"></div>
+
+    <section id="Contact" class="contact-page reveal">
       <h2>Where to Find Me</h2>
       <div class="container-contact">
-        <a
-          href="https://www.linkedin.com/in/ahmad-farzad-shafi-9075ab418/"
-          target="_blank"
-          class="social-item"
-        >
-          <div class="social-icon">in</div>
-          <p>Linkedin</p>
+        <a href="https://www.linkedin.com/in/ahmad-farzad-shafi-9075ab418/" target="_blank" class="social-item">
+          <div class="social-icon" aria-hidden="true"><i class="fa-brands fa-linkedin-in"></i></div>
+          <p>LinkedIn</p>
           <span>&#8594;</span>
         </a>
         <a href="https://wa.me/93729375643" target="_blank" class="social-item">
-          <div class="social-icon">W</div>
+          <div class="social-icon"><i class="fa-brands fa-whatsapp"></i></div>
           <p>WhatsApp</p>
           <span>&#8594;</span>
         </a>
-        <a
-          href="https://www.instagram.com/far74d.a/"
-          target="_blank"
-          class="social-item"
-        >
-          <div class="social-icon">I</div>
+        <a href="https://www.instagram.com/far74d.a/" target="_blank" class="social-item">
+          <div class="social-icon"><i class="fa-brands fa-instagram"></i></div>
           <p>Instagram</p>
           <span>&#8594;</span>
         </a>
-        <a
-          href="https://github.com/farzad00084-gif"
-          target="_blank"
-          class="social-item"
-        >
-          <div class="social-icon">gh</div>
+        <a href="https://github.com/farzad00084-gif" target="_blank" class="social-item">
+          <div class="social-icon"><i class="fa-brands fa-github"></i></div>
           <p>Github</p>
           <span>&#8594;</span>
         </a>
       </div>
     </section>
     <!-- end of contact section -->
+
     <footer>
       <p>&copy; 2026 Farzad. All rights reserved.</p>
     </footer>
+
+    <script>
+      // Scroll reveal
+      const revealItems = document.querySelectorAll(".reveal, .reveal-card");
+      const revealObserver = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12, rootMargin: "0px 0px -50px 0px" },
+      );
+      revealItems.forEach((item) => revealObserver.observe(item));
+
+      // Theme toggle
+      const themeToggle = document.getElementById("themeToggle");
+      themeToggle.addEventListener("click", () => {
+        const current = document.documentElement.getAttribute("data-theme");
+        const next = current === "light" ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", next);
+        localStorage.setItem("theme", next);
+      });
+    </script>
   </body>
 </html>
