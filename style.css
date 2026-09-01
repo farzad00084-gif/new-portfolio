@@ -406,17 +406,18 @@ html[data-theme="light"] .theme-toggle .fa-moon {
 }
 
 .container-projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    width: 100%;
 }
 
 .project-card {
   background-color: var(--bg-alt);
   border: 1px solid var(--border);
   padding: 20px;
-  width: 450px;
+  width: 100%;
+  max-width: none;
   text-align: left;
   transition:
     transform 0.3s ease,
