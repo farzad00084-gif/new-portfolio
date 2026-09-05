@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>North Zone Travel Agency — Case Study</title>
+
+    <link rel="stylesheet" href="project.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body class="pj pj-north">
+    <script>
+      // Apply saved/system theme before paint to avoid a flash
+      (function () {
+        var saved = localStorage.getItem("theme");
+        var theme = saved || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+
+    <nav class="topbar">
+      <a class="brand" href="index.html">FARZAD</a>
+      <div class="topbar-side">
+        <div class="topbar-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#Projects">Projects</a>
+          <a href="about.html">About</a>
+        </div>
+        <a class="btn btn-cta" href="index.html#Contact">Get In Touch</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark or light theme">
+          <i class="fa-solid fa-moon"></i>
+          <i class="fa-solid fa-sun"></i>
+        </button>
+      </div>
+    </nav>
+    <!-- end of topbar -->
+
+    <header id="top" class="pj-hero">
+      <div class="pj-copy">
+        <p class="badge"><span class="badge-dot"></span> Project 02 · Travel Agency</p>
+        <h1>North <span class="grad-text">Zone</span></h1>
+        <p class="lead">
+          A one-page site for NORTH ZONE — Visa &amp; Travel Services in Kabul.
+          A route-map hero, visa destinations grouped by region, a four-step
+          process and a contact form, all built in pure HTML and CSS with not a
+          line of JavaScript.
+        </p>
+        <p class="pj-check">
+          <i class="fa-solid fa-circle-check"></i> Live check · September 4, 2026 · loads OK
+        </p>
+        <div class="pj-cta">
+          <a
+            class="btn btn-solid"
+            href="https://north-zone.vercel.app/"
+            target="_blank"
+            rel="noopener"
+          >
+            Go to live webpage <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          <a class="btn btn-line" href="index.html#Projects">
+            Back to projects <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="pj-visual" aria-hidden="false">
+        <div class="shot-frame">
+          <div class="shot-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="shot-addr">north-zone.vercel.app</span>
+          </div>
+          <img
+            src="images/Screenshot 2026-08-20 181717.png"
+            alt="Screenshot of the NORTH ZONE website"
+          />
+        </div>
+        <p class="shot-cap">Homepage — as it runs today</p>
+      </div>
+    </header>
+    <!-- end of hero -->
+
+    <section id="overview" class="pj-section">
+      <div class="container">
+        <div class="sec-head">
+          <p class="kicker"><i class="fa-solid fa-asterisk"></i> About this project</p>
+          <h2>The project</h2>
+        </div>
+        <div class="pj-body rv">
+          <p>
+            NORTH ZONE is a <strong>“Kabul → the world”</strong> visa agency
+            site. The hero features a signature SVG route map with lines
+            radiating from Kabul to Tehran, Dushanbe, Tashkent, Dubai, Berlin and
+            Rome — each with its own embassy timeline — followed by a passport-style
+            stats strip, visa services grouped by region, a four-checkpoint process,
+            client testimonials and a working contact layout.
+          </p>
+          <p>
+            The design brief was <strong>no JavaScript</strong>, so every effect —
+            the numbered stamps, the destination cards, the route map — is pure
+            HTML and CSS. The site lists its real details too: an office in
+            Shar-e-Naw, Kabul, phone +93 729 375 643, info@northzone.af, and hours
+            Saturday–Thursday 8:00–16:00.
+          </p>
+          <div class="pj-meta">
+            <span class="meta-chip meta-chip--live"><i class="fa-solid fa-circle-check"></i> Live on Vercel</span>
+            <span class="meta-chip"><i class="fa-brands fa-html5"></i> HTML</span>
+            <span class="meta-chip"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+            <span class="meta-chip"><i class="fa-solid fa-ban"></i> No JavaScript</span>
+            <span class="meta-chip"><i class="fa-solid fa-map-location-dot"></i> 11 countries</span>
+          </div>
+          <p class="source-row rv">
+            <a href="https://github.com/farzad00084-gif/NORTH-ZONE" target="_blank" rel="noopener">
+              View the source on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- end of overview -->
+
+    <section id="figures" class="pj-section">
+      <div class="container">
+        <div class="sec-head">
+          <p class="kicker"><i class="fa-solid fa-asterisk"></i> The site at a glance</p>
+          <h2>Facts &amp; figures</h2>
+        </div>
+        <div class="pj-stats rv">
+          <div class="stat">
+            <p class="stat-val">9</p>
+            <p class="stat-key">Years in operation</p>
+          </div>
+          <div class="stat">
+            <p class="stat-val">6,400+</p>
+            <p class="stat-key">Visa files prepared</p>
+          </div>
+          <div class="stat">
+            <p class="stat-val">11</p>
+            <p class="stat-key">Destination countries</p>
+          </div>
+          <div class="stat">
+            <p class="stat-val">4</p>
+            <p class="stat-key">Languages spoken</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of figures -->
+
+    <section id="destinations" class="pj-section">
+      <div class="container">
+        <div class="sec-head">
+          <p class="kicker"><i class="fa-solid fa-map-location-dot"></i> Where we file</p>
+          <h2>Visa services, region by region</h2>
+        </div>
+        <div class="dest-grid">
+          <article class="dest rv">
+            <p class="dest-region">Neighbouring</p>
+            <h3>Iran</h3>
+            <span class="dest-days">5–7 days</span>
+            <p>Tourist, transit and business visas, plus support for Mashhad and Qom pilgrimage travel.</p>
+          </article>
+          <article class="dest rv">
+            <p class="dest-region">Central Asia</p>
+            <h3>The 5 Republics</h3>
+            <span class="dest-days">4–8 days</span>
+            <p>Tajikistan, Uzbekistan, Turkmenistan, Kyrgyzstan, Kazakhstan — trade, study and family-visit visas, including transit letters.</p>
+          </article>
+          <article class="dest rv">
+            <p class="dest-region">Gulf &amp; Arab States</p>
+            <h3>UAE · Saudi · Qatar</h3>
+            <span class="dest-days">3–10 days</span>
+            <p>Work, visit and Umrah / Hajj-support visas, with guidance on sponsor letters and medical checks.</p>
+          </article>
+          <article class="dest rv">
+            <p class="dest-region">Europe · Schengen</p>
+            <h3>Germany</h3>
+            <span class="dest-days">10–15 days</span>
+            <p>Study, family-reunion and business Schengen visas filed through the German visa application centre.</p>
+          </article>
+          <article class="dest rv">
+            <p class="dest-region">Europe · Schengen</p>
+            <h3>Italy</h3>
+            <span class="dest-days">10–12 days</span>
+            <p>Tourist, study and work-permit-linked Schengen visas, with appointment booking assistance.</p>
+          </article>
+          <article class="dest dest--wide rv">
+            <h3>Also available</h3>
+            <p>Once the visa is approved: flight booking, hotel reservation and travel insurance.</p>
+            <i class="fa-solid fa-plane-up" aria-hidden="true"></i>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- end of destinations -->
+
+    <section id="process" class="pj-section">
+      <div class="container">
+        <div class="sec-head">
+          <p class="kicker"><i class="fa-solid fa-asterisk"></i> How it works</p>
+          <h2>Four checkpoints to your visa</h2>
+        </div>
+        <div class="step-grid">
+          <article class="step rv">
+            <h3>Consultation</h3>
+            <p>Destination, purpose of travel and existing documents are reviewed to confirm which visa fits.</p>
+          </article>
+          <article class="step rv">
+            <h3>Document preparation</h3>
+            <p>Forms, translations, bank statements and invitation letters — checked twice against embassy rules.</p>
+          </article>
+          <article class="step rv">
+            <h3>Embassy submission</h3>
+            <p>Appointment booked and the file submitted in person, so nothing is lost or delayed.</p>
+          </article>
+          <article class="step rv">
+            <h3>Visa ready</h3>
+            <p>The decision is tracked, and the client is called the moment the passport can be collected in Kabul.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- end of process -->
+
+    <section class="cta-band rv">
+      <h2>Fly over and see the route map</h2>
+      <p>Every stamp, step and statistic is right there on the live page.</p>
+      <a
+        class="btn btn-solid"
+        href="https://north-zone.vercel.app/"
+        target="_blank"
+        rel="noopener"
+      >
+        Go to live webpage <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </section>
+
+    <div class="container">
+      <nav class="pj-nav" aria-label="Project navigation">
+        <a class="prev" href="project-first-portfolio.html">
+          <span class="nav-label">Previous project</span>
+          <span class="nav-title"><i class="fa-solid fa-arrow-left"></i> My First Portfolio</span>
+        </a>
+        <a class="next" href="project-makeup.html">
+          <span class="nav-label">Next project</span>
+          <span class="nav-title">Make Up Online Shop <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+      </nav>
+    </div>
+
+    <footer class="footer">
+      <a class="brand" href="index.html">FARZAD</a>
+      <p>&copy; 2026 Farzad · Built with pure HTML &amp; CSS.</p>
+      <a class="to-top" href="#top"><i class="fa-solid fa-arrow-up"></i> Back to top</a>
+    </footer>
+
+    <script>
+      // Theme toggle
+      const themeToggle = document.getElementById("themeToggle");
+      themeToggle.addEventListener("click", () => {
+        const current = document.documentElement.getAttribute("data-theme");
+        const next = current === "light" ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", next);
+        localStorage.setItem("theme", next);
+      });
+    </script>
+  </body>
+</html>

@@ -46,9 +46,9 @@
         </div>
       </div>
     </nav>
-    <!-- end of navbar -->
+    <!-- end of navbar -->  
 
-    <section class="hero-page reveal">
+    <section class="hero-page">
       <div class="hero-text">
         <button class="btn btn-status" type="button" disabled>
           <span class="status-dot"></span>
@@ -69,6 +69,13 @@
     </section>
     <!-- end of hero section  -->
 
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group"><span>HTML</span><i class="fa-solid fa-asterisk"></i><span>CSS</span><i class="fa-solid fa-asterisk"></i><span>JavaScript</span><i class="fa-solid fa-asterisk"></i><span>UI/UX Design</span><i class="fa-solid fa-asterisk"></i><span>Figma</span><i class="fa-solid fa-asterisk"></i><span>Responsive Design</span><i class="fa-solid fa-asterisk"></i></div>
+        <div class="marquee-group"><span>HTML</span><i class="fa-solid fa-asterisk"></i><span>CSS</span><i class="fa-solid fa-asterisk"></i><span>JavaScript</span><i class="fa-solid fa-asterisk"></i><span>UI/UX Design</span><i class="fa-solid fa-asterisk"></i><span>Figma</span><i class="fa-solid fa-asterisk"></i><span>Responsive Design</span><i class="fa-solid fa-asterisk"></i></div>
+      </div>
+    </div>
+
     <div class="rule" role="separator"></div>
 
     <section class="reveal">
@@ -86,6 +93,11 @@
             I'm looking for opportunities where reliability, clear
             communication, and a willingness to learn make a real difference.
           </p>
+          <div class="about-actions">
+            <a href="about.html" class="btn btn-primary reveal-card" style="--delay: 150ms">
+              More About Me <span class="arrow">&#8599;</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -95,12 +107,12 @@
 
     <section id="Education" class="education-page reveal">
       <div class="container-education">
-        <div class="education-card">
+        <div class="education-card reveal-card" style="--delay: 0ms">
           <h3>Education</h3>
           <p>Web Developer - Frontend</p>
           <p>UI/UX Designer</p>
         </div>
-        <div class="languages-card">
+        <div class="languages-card reveal-card" style="--delay: 100ms">
           <h3>Languages</h3>
           <div class="language-item">
             <p>Turkish</p>
@@ -129,10 +141,10 @@
           <div class="skill-info">
             <div class="skill-top">
               <p>UI/UX Design</p>
-              <span>85%</span>
+              <span class="skill-percent" data-target="85">85%</span>
             </div>
             <div class="skill-bar">
-              <div class="skill-fill" style="width: 85%"></div>
+              <div class="skill-fill" data-width="85"></div>
             </div>
           </div>
         </div>
@@ -141,10 +153,10 @@
           <div class="skill-info">
             <div class="skill-top">
               <p>HTML</p>
-              <span>90%</span>
+              <span class="skill-percent" data-target="90">90%</span>
             </div>
             <div class="skill-bar">
-              <div class="skill-fill" style="width: 90%"></div>
+              <div class="skill-fill" data-width="90"></div>
             </div>
           </div>
         </div>
@@ -153,10 +165,10 @@
           <div class="skill-info">
             <div class="skill-top">
               <p>CSS</p>
-              <span>85%</span>
+              <span class="skill-percent" data-target="85">85%</span>
             </div>
             <div class="skill-bar">
-              <div class="skill-fill" style="width: 85%"></div>
+              <div class="skill-fill" data-width="85"></div>
             </div>
           </div>
         </div>
@@ -165,10 +177,10 @@
           <div class="skill-info">
             <div class="skill-top">
               <p>JavaScript</p>
-              <span>65%</span>
+              <span class="skill-percent" data-target="65">65%</span>
             </div>
             <div class="skill-bar">
-              <div class="skill-fill" style="width: 65%"></div>
+              <div class="skill-fill" data-width="65"></div>
             </div>
           </div>
         </div>
@@ -177,10 +189,10 @@
           <div class="skill-info">
             <div class="skill-top">
               <p>Frontend Development</p>
-              <span>80%</span>
+              <span class="skill-percent" data-target="80">80%</span>
             </div>
             <div class="skill-bar">
-              <div class="skill-fill" style="width: 80%"></div>
+              <div class="skill-fill" data-width="80"></div>
             </div>
           </div>
         </div>
@@ -197,25 +209,37 @@
           <img src="images/Screenshot 2026-08-20 181834.png" alt="Project 1" />
           <h3>My First Portfolio</h3>
           <p>This was my first attempt to make a portfolio.</p>
-          <a href="https://my-portfolio-psi-lemon-90.vercel.app/" target="_blank">View Project &#8599;</a>
+          <div class="card-actions">
+            <a href="project-first-portfolio.html">Case Study <span class="arrow">&#8594;</span></a>
+            <a class="live" href="https://my-portfolio-psi-lemon-90.vercel.app/" target="_blank">Live Demo <span class="arrow">&#8599;</span></a>
+          </div>
         </div>
         <div class="project-card reveal-card" style="--delay: 90ms">
           <img src="images/Screenshot 2026-08-20 181717.png" alt="Project 2" />
           <h3>North Zone Travel Agency</h3>
           <p>A simple website for North Zone travel agency.</p>
-          <a href="https://north-zone.vercel.app/" target="_blank">View Project &#8599;</a>
+          <div class="card-actions">
+            <a href="project-north-zone.html">Case Study <span class="arrow">&#8594;</span></a>
+            <a class="live" href="https://north-zone.vercel.app/" target="_blank">Live Demo <span class="arrow">&#8599;</span></a>
+          </div>
         </div>
         <div class="project-card reveal-card" style="--delay: 180ms">
           <img src="images/image.png" alt="Project 3" />
           <h3>Make Up Online Shop</h3>
           <p>An online shop.</p>
-          <a href="#">View Project &#8599;</a>
+          <div class="card-actions">
+            <a href="project-makeup.html">Case Study <span class="arrow">&#8594;</span></a>
+            <span class="card-soon">Live Demo — soon</span>
+          </div>
         </div>
         <div class="project-card reveal-card" style="--delay: 270ms">
           <img src="images/Screenshot 2026-08-05 210635.png" alt="Project 4" />
           <h3>Mentor Selecting</h3>
           <p>A mentor selection page.</p>
-          <a href="https://figma-assignment-pied.vercel.app/" target="_blank">View Project &#8599;</a>
+          <div class="card-actions">
+            <a href="project-mentors.html">Case Study <span class="arrow">&#8594;</span></a>
+            <a class="live" href="https://figma-assignment-pied.vercel.app/" target="_blank">Live Demo <span class="arrow">&#8599;</span></a>
+          </div>
         </div>
       </div>
     </section>
@@ -226,22 +250,22 @@
     <section id="Contact" class="contact-page reveal">
       <h2>Where to Find Me</h2>
       <div class="container-contact">
-        <a href="https://www.linkedin.com/in/ahmad-farzad-shafi-9075ab418/" target="_blank" class="social-item">
+        <a href="https://www.linkedin.com/in/ahmad-farzad-shafi-9075ab418/" target="_blank" class="social-item reveal-card" style="--delay: 0ms">
           <div class="social-icon" aria-hidden="true"><i class="fa-brands fa-linkedin-in"></i></div>
           <p>LinkedIn</p>
           <span>&#8594;</span>
         </a>
-        <a href="https://wa.me/93729375643" target="_blank" class="social-item">
+        <a href="https://wa.me/93729375643" target="_blank" class="social-item reveal-card" style="--delay: 90ms">
           <div class="social-icon"><i class="fa-brands fa-whatsapp"></i></div>
           <p>WhatsApp</p>
           <span>&#8594;</span>
         </a>
-        <a href="https://www.instagram.com/far74d.a/" target="_blank" class="social-item">
+        <a href="https://www.instagram.com/far74d.a/" target="_blank" class="social-item reveal-card" style="--delay: 180ms">
           <div class="social-icon"><i class="fa-brands fa-instagram"></i></div>
           <p>Instagram</p>
           <span>&#8594;</span>
         </a>
-        <a href="https://github.com/farzad00084-gif" target="_blank" class="social-item">
+        <a href="https://github.com/farzad00084-gif" target="_blank" class="social-item reveal-card" style="--delay: 270ms">
           <div class="social-icon"><i class="fa-brands fa-github"></i></div>
           <p>Github</p>
           <span>&#8594;</span>
@@ -278,6 +302,47 @@
         document.documentElement.setAttribute("data-theme", next);
         localStorage.setItem("theme", next);
       });
+
+      // Solid navbar on scroll
+      const navBar = document.querySelector("nav");
+      const onScroll = () => navBar.classList.toggle("scrolled", window.scrollY > 10);
+      window.addEventListener("scroll", onScroll, { passive: true });
+      onScroll();
+
+      // Animate skill bars + percentages when they scroll into view
+      const skillItems = document.querySelectorAll(".skill-item");
+      const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const skillObserver = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            const item = entry.target;
+            const fill = item.querySelector(".skill-fill");
+            const label = item.querySelector(".skill-percent");
+            const target = parseFloat(fill.dataset.width || "0");
+            const delay = parseFloat(getComputedStyle(item).getPropertyValue("--delay")) || 0;
+            const animate = () => {
+              if (prefersReduced) {
+                fill.style.width = target + "%";
+                label.textContent = target + "%";
+                return;
+              }
+              fill.style.width = target + "%";
+              const start = performance.now();
+              const step = (now) => {
+                const p = Math.min((now - start) / 1100, 1);
+                label.textContent = Math.round(p * target) + "%";
+                if (p < 1) requestAnimationFrame(step);
+              };
+              requestAnimationFrame(step);
+            };
+            setTimeout(animate, delay);
+            observer.unobserve(item);
+          });
+        },
+        { threshold: 0.4 },
+      );
+      skillItems.forEach((item) => skillObserver.observe(item));
     </script>
   </body>
 </html>

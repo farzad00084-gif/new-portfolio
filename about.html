@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Farzad — 18, Kabul</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body class="about-page">
+    <script>
+      // Apply saved/system theme before paint to avoid a flash
+      (function () {
+        var saved = localStorage.getItem("theme");
+        var theme = saved || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+
+    <nav class="topbar">
+      <a class="brand" href="index.html">FARZAD</a>
+      <div class="topbar-side">
+        <div class="topbar-links">
+          <a href="index.html">Home</a>
+          <a href="#about">About</a>
+          <a href="#kabul">Kabul</a>
+          <a href="#hobbies">Hobbies</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark or light theme">
+          <i class="fa-solid fa-moon"></i>
+          <i class="fa-solid fa-sun"></i>
+        </button>
+      </div>
+    </nav>
+    <!-- end of topbar -->
+
+    <header id="top" class="hero">
+      <div class="hero-text">
+        <p class="badge"><span class="badge-dot"></span> Hey, it's me again</p>
+        <h1>
+          I'm <span class="grad-text">Farzad</span> — 18 years old, building
+          for the web.
+        </h1>
+        <p class="lead">
+          When I'm not building websites, I'm chasing a ball — table tennis,
+          basketball, badminton — or thinking a few moves ahead on the chessboard.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-solid" href="#about">Who I am</a>
+          <a class="btn btn-line" href="#hobbies">What I play</a>
+        </div>
+      </div>
+      <div class="hero-emblem-wrap" aria-hidden="true">
+        <div class="hero-emblem">
+          <span class="emblem-ring"></span>
+          <span class="emblem-ring emblem-ring--inner"></span>
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <p class="emblem-caption">Kabul · Afghanistan</p>
+      </div>
+    </header>
+    <!-- end of hero -->
+
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="sec-head">
+          <p class="kicker"><i class="fa-solid fa-asterisk"></i> About me</p>
+          <h2>Who I am</h2>
+        </div>
+        <p class="bio rv">
+          I'm Farzad, an 18-year-old web developer who has called Istanbul home for
+          more than five years. I'm reliable under pressure, careful with my time,
+          and always curious about how things work — whether that's a layout bug or
+          a chess endgame.
+        </p>
+        <div class="facts">
+          <article class="fact rv">
+            <div class="fact-icon"><i class="fa-solid fa-cake-candles"></i></div>
+            <p class="fact-key">Age</p>
+            <p class="fact-val">18</p>
+          </article>
+          <article class="fact rv">
+            <div class="fact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <p class="fact-key">Home</p>
+            <p class="fact-val">Kabul, Afghanistan</p>
+          </article>
+          <article class="fact rv">
+            <div class="fact-icon"><i class="fa-solid fa-language"></i></div>
+            <p class="fact-key">Languages</p>
+            <p class="fact-val">Turkish · Dari · English</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- end of who i am -->
+
+    <section id="kabul" class="section place">
+      <div class="container">
+        <div class="sec-head">
+          <p class="kicker"><i class="fa-solid fa-asterisk"></i> Where I live</p>
+          <h2>Kabul, Afghanistan</h2>
+        </div>
+        <div class="place-grid">
+          <div class="place-emblem-wrap rv" aria-hidden="true">
+            <div class="place-emblem">
+              <span class="emblem-ring"></span>
+              <i class="fa-solid fa-mountain-sun"></i>
+            </div>
+          </div>
+          <div class="place-text rv">
+            <p>
+              My address is Kabul, Afghanistan — that's where I'm based right now.
+              I spent more than five years living in Istanbul, Türkiye, so I carry
+              two homes with me: the energy of Istanbul and the calm of Kabul.
+              Wherever I am, I keep building, learning, and staying curious.
+            </p>
+            <ul class="chips">
+              <li class="chip rv"><i class="fa-solid fa-house"></i><strong>Kabul,</strong> Afghanistan</li>
+              <li class="chip rv"><i class="fa-solid fa-clock"></i><strong>5+ years</strong> in Istanbul</li>
+              <li class="chip rv"><i class="fa-solid fa-earth-europe"></i><strong>2</strong> continents</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of where i live -->
+
+    <section id="hobbies" class="section hobbies">
+      <div class="container">
+        <div class="sec-head">
+          <p class="kicker"><i class="fa-solid fa-asterisk"></i> Beyond the screen</p>
+          <h2>Games I play</h2>
+        </div>
+        <div class="sports-grid">
+          <article class="sport rv">
+            <div class="sport-icon"><i class="fa-solid fa-table-tennis-paddle-ball"></i></div>
+            <p class="sport-num">01</p>
+            <h3>Table Tennis</h3>
+            <p>Fast hands, faster rallies — my favourite way to blow off steam.</p>
+          </article>
+          <article class="sport rv">
+            <div class="sport-icon"><i class="fa-solid fa-basketball"></i></div>
+            <p class="sport-num">02</p>
+            <h3>Basketball</h3>
+            <p>Pick-up games and three-pointers with friends at the neighbourhood court.</p>
+          </article>
+          <article class="sport rv">
+            <div class="sport-icon"><i class="fa-solid fa-feather"></i></div>
+            <p class="sport-num">03</p>
+            <h3>Badminton</h3>
+            <p>Lighter and quicker than it looks — footwork is everything.</p>
+          </article>
+          <article class="sport rv">
+            <div class="sport-icon"><i class="fa-solid fa-chess-knight"></i></div>
+            <p class="sport-num">04</p>
+            <h3>Chess</h3>
+            <p>Slow, sharp, and addictive. I try to think three moves ahead.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- end of hobbies -->
+
+    <footer class="footer">
+      <a class="brand" href="index.html">FARZAD</a>
+      <p>&copy; 2026 Farzad · This page is built with pure HTML &amp; CSS.</p>
+      <a class="to-top" href="#top"><i class="fa-solid fa-arrow-up"></i> Back to top</a>
+    </footer>
+
+    <script>
+      // Theme toggle
+      const themeToggle = document.getElementById("themeToggle");
+      themeToggle.addEventListener("click", () => {
+        const current = document.documentElement.getAttribute("data-theme");
+        const next = current === "light" ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", next);
+        localStorage.setItem("theme", next);
+      });
+    </script>
+  </body>
+</html>

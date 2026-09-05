@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make Up Online Shop — Case Study</title>
+    <link rel="stylesheet" href="project.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body class="pj pj-makeup">
+    <script>
+      // Apply saved/system theme before paint to avoid a flash
+      (function () {
+        var saved = localStorage.getItem("theme");
+        var theme = saved || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+
+    <nav class="topbar">
+      <a class="brand" href="index.html">FARZAD</a>
+      <div class="topbar-side">
+        <div class="topbar-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#Projects">Projects</a>
+          <a href="about.html">About</a>
+        </div>
+        <a class="btn btn-cta" href="index.html#Contact">Get In Touch</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark or light theme">
+          <i class="fa-solid fa-moon"></i>
+          <i class="fa-solid fa-sun"></i>
+        </button>
+      </div>
+    </nav>
+    <!-- end of topbar -->
+
+    <header id="top" class="pj-hero">
+      <div class="pj-copy">
+        <p class="badge"><span class="badge-dot"></span> Project 03 · Online Shop</p>
+        <h1>Make Up <span class="grad-text">Online Shop</span></h1>
+        <p class="lead">
+          A cosmetics storefront design — a full-width homepage made to browse:
+          hero promo up top, a product catalogue below, and a shop layout built to
+          sell.
+        </p>
+        <p class="pj-check is-pending">
+          <i class="fa-solid fa-hourglass-half"></i> No live webpage yet — coming soon
+        </p>
+        <div class="pj-cta">
+          <span class="btn btn-line btn-disabled" aria-disabled="true">
+            <i class="fa-solid fa-lock"></i> Live demo — coming soon
+          </span>
+          <a class="btn btn-line" href="index.html#Projects">
+            Back to projects <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="pj-visual" aria-hidden="false">
+        <div class="shot-frame">
+          <div class="shot-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="shot-addr">make-up-shop — concept preview</span>
+          </div>
+          <img
+            src="images/image.png"
+            alt="Screenshot of the Make Up Online Shop homepage design"
+          />
+        </div>
+        <p class="shot-cap">Concept — homepage screenshot from the portfolio card</p>
+      </div>
+    </header>
+    <!-- end of hero -->
+
+    <section id="overview" class="pj-section">
+      <div class="container">
+        <div class="sec-head">
+          <p class="kicker"><i class="fa-solid fa-asterisk"></i> About this project</p>
+          <h2>The project</h2>
+        </div>
+        <div class="pj-body rv">
+          <p>
+            Make Up Online Shop is the e-commerce concept in my portfolio: an
+            online shop for a cosmetics brand. This page is built from the design
+            screenshot in the project card — the project hasn't been deployed
+            anywhere yet, so there's no live webpage to open.
+          </p>
+          <p>
+            The moment it has a live link, I'll check the real site the same way I
+            did the others, pull its actual content and photos, and swap this
+            "coming soon" page for the full case study.
+          </p>
+          <div class="pj-meta">
+            <span class="meta-chip"><i class="fa-solid fa-spray-can-sparkles"></i> Cosmetics shop</span>
+            <span class="meta-chip"><i class="fa-brands fa-html5"></i> HTML</span>
+            <span class="meta-chip"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+            <span class="meta-chip"><i class="fa-solid fa-cart-shopping"></i> Online shop layout</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of overview -->
+
+    <section id="status" class="pj-section">
+      <div class="container">
+        <div class="sec-head">
+          <p class="kicker"><i class="fa-solid fa-asterisk"></i> Status</p>
+          <h2>Where it stands</h2>
+        </div>
+        <div class="status-card rv">
+          <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+          <div>
+            <h3>Designed, not yet deployed</h3>
+            <p>
+              The homepage concept exists as a screenshot. There is no live URL on
+              the project card yet — add one whenever the shop goes online and this
+              page will be updated to match the real website.
+            </p>
+          </div>
+        </div>
+        <ul class="next-list">
+          <li class="rv">
+            <span class="n-num">01</span>
+            Deploy the shop — Vercel or Netlify take minutes.
+          </li>
+          <li class="rv">
+            <span class="n-num">02</span>
+            Put the live link on the project card in the portfolio.
+          </li>
+          <li class="rv">
+            <span class="n-num">03</span>
+            This page gets checked against the real site, with its actual photos.
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- end of status -->
+
+    <section class="cta-band rv">
+      <h2>Coming soon to the web</h2>
+      <p>Until then, the rest of the portfolio is live and waiting.</p>
+      <a class="btn btn-solid" href="index.html#Projects">
+        Back to my projects <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </section>
+
+    <div class="container">
+      <nav class="pj-nav" aria-label="Project navigation">
+        <a class="prev" href="project-north-zone.html">
+          <span class="nav-label">Previous project</span>
+          <span class="nav-title"><i class="fa-solid fa-arrow-left"></i> North Zone Travel Agency</span>
+        </a>
+        <a class="next" href="project-mentors.html">
+          <span class="nav-label">Next project</span>
+          <span class="nav-title">Mentor Selecting <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+      </nav>
+    </div>
+
+    <footer class="footer">
+      <a class="brand" href="index.html">FARZAD</a>
+      <p>&copy; 2026 Farzad · Built with pure HTML &amp; CSS.</p>
+      <a class="to-top" href="#top"><i class="fa-solid fa-arrow-up"></i> Back to top</a>
+    </footer>
+
+    <script>
+      // Theme toggle
+      const themeToggle = document.getElementById("themeToggle");
+      themeToggle.addEventListener("click", () => {
+        const current = document.documentElement.getAttribute("data-theme");
+        const next = current === "light" ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", next);
+        localStorage.setItem("theme", next);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Portfolio — Case Study</title>
+ 
+    <link rel="stylesheet" href="project.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body class="pj pj-port">
+    <script>
+      // Apply saved/system theme before paint to avoid a flash
+      (function () {
+        var saved = localStorage.getItem("theme");
+        var theme = saved || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+
+    <nav class="topbar">
+      <a class="brand" href="index.html">FARZAD</a>
+      <div class="topbar-side">
+        <div class="topbar-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#Projects">Projects</a>
+          <a href="about.html">About</a>
+        </div>
+        <a class="btn btn-cta" href="index.html#Contact">Get In Touch</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark or light theme">
+          <i class="fa-solid fa-moon"></i>
+          <i class="fa-solid fa-sun"></i>
+        </button>
+      </div>
+    </nav>
+    <!-- end of topbar -->
+
+    <header id="top" class="pj-hero">
+      <div class="pj-copy">
+        <p class="badge"><span class="badge-dot"></span> Project 01 · Web Portfolio</p>
+        <h1>My First <span class="grad-text">Portfolio</span></h1>
+        <p class="lead">
+          The first site I ever shipped — a calm, three-page portfolio with a
+          short introduction, a full Skills &amp; Education page, and a contact
+          page. It's still live on Vercel, and it's the reason this site exists.
+        </p>
+        <p class="pj-check">
+          <i class="fa-solid fa-circle-check"></i> Live check · September 4, 2026 · loads OK
+        </p>
+        <div class="pj-cta">
+          <a
+            class="btn btn-solid"
+            href="https://my-portfolio-psi-lemon-90.vercel.app/"
+            target="_blank"
+            rel="noopener"
+          >
+            Go to live webpage <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          <a class="btn btn-line" href="index.html#Projects">
+            Back to projects <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="pj-visual" aria-hidden="false">
+        <div class="shot-frame">
+          <div class="shot-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="shot-addr">my-portfolio-psi-lemon-90.vercel.app</span>
+          </div>
+          <img
+            src="images/Screenshot 2026-08-20 181834.png"
+            alt="Screenshot of the My First Portfolio homepage"
+          />
+        </div>
+        <p class="shot-cap">Homepage — as it runs today</p>
+      </div>
+    </header>
+    <!-- end of hero -->
+
+    <section id="overview" class="pj-section">
+      <div class="container">
+        <div class="sec-head">
+          <p class="kicker"><i class="fa-solid fa-asterisk"></i> About this project</p>
+          <h2>The project</h2>
+        </div>
+        <div class="pj-body rv">
+          <p>
+            My First Portfolio — titled <strong>“Ahmad Farzad — Portfolio”</strong> —
+            is the website I built while I was still learning front-end
+            development. It opens from Kabul, Afghanistan with the tagline
+            <strong>“organized, adaptable, and ready to contribute”</strong> and
+            walks visitors through who I am, what I've studied, and how to reach me.
+          </p>
+          <p>
+            The site is split into three simple pages. The homepage introduces me
+            and links to the rest; <strong>Skills &amp; Education</strong> covers my
+            Ghazi High School diploma, certificates, language proficiency in
+            English, Dari, Pashto and Turkish, and the interpersonal and technical
+            skills I bring to work — including the
+            <strong>“Currently at Upskill”</strong> front-end training block that
+            started all of this. <strong>Contact</strong> shares my email, phone and
+            WhatsApp with a single “Send an Email” button.
+          </p>
+          <div class="pj-meta">
+            <span class="meta-chip meta-chip--live"><i class="fa-solid fa-circle-check"></i> Live on Vercel</span>
+            <span class="meta-chip"><i class="fa-brands fa-html5"></i> HTML</span>
+            <span class="meta-chip"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+            <span class="meta-chip"><i class="fa-solid fa-file-lines"></i> 3 pages</span>
+            <span class="meta-chip"><i class="fa-solid fa-language"></i> 4 languages</span>
+          </div>
+          <p class="source-row rv">
+            <a href="https://github.com/farzad00084-gif/My-Portfolio" target="_blank" rel="noopener">
+              View the source on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- end of overview -->
+
+    <section id="tour" class="pj-section">
+      <div class="container">
+        <div class="sec-head">
+          <p class="kicker"><i class="fa-solid fa-asterisk"></i> What's on the live site</p>
+          <h2>A tour of all three pages</h2>
+        </div>
+        <div class="tour-list">
+          <article class="tour-row rv">
+            <p class="tour-num">01</p>
+            <div>
+              <h3>Home <span class="tag">Live</span></h3>
+              <p>
+                “Kabul, Afghanistan · Ahmad Farzad.” A short intro about clear
+                communication in four languages, a button to the skills page and a
+                “Get in Touch” link — the simple first impression that every other
+                page hangs off.
+              </p>
+            </div>
+          </article>
+          <article class="tour-row rv">
+            <p class="tour-num">02</p>
+            <div>
+              <h3>Skills &amp; Education</h3>
+              <p>
+                The biggest page: my high-school diploma from Ghazi High School
+                (2012–2025), an English diploma from the Vancouver TESOL Training
+                Center, language proficiency bars, and tidy lists of interpersonal
+                and technical skills — Microsoft Office, Google Workspace, Zoom and
+                Canva — next to the front-end training I'm building at Upskill.
+              </p>
+            </div>
+          </article>
+          <article class="tour-row rv">
+            <p class="tour-num">03</p>
+            <div>
+              <h3>Contact</h3>
+              <p>
+                “Let's Connect.” Email, phone and WhatsApp with a prominent
+                “Send an Email” button, closing with the location line:
+                Ahmad Farzad — Kabul, Afghanistan.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- end of tour -->
+
+    <section class="cta-band rv">
+      <h2>See it still running live</h2>
+      <p>The very first portfolio, untouched and online.</p>
+      <a
+        class="btn btn-solid"
+        href="https://my-portfolio-psi-lemon-90.vercel.app/"
+        target="_blank"
+        rel="noopener"
+      >
+        Go to live webpage <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </section>
+
+    <div class="container">
+      <nav class="pj-nav" aria-label="Project navigation">
+        <a class="prev" href="index.html#Projects">
+          <span class="nav-label">Back to</span>
+          <span class="nav-title"><i class="fa-solid fa-arrow-left"></i> All projects</span>
+        </a>
+        <a class="next" href="project-north-zone.html">
+          <span class="nav-label">Next project</span>
+          <span class="nav-title">North Zone Travel Agency <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+      </nav>
+    </div>
+
+    <footer class="footer">
+      <a class="brand" href="index.html">FARZAD</a>
+      <p>&copy; 2026 Farzad · Built with pure HTML &amp; CSS.</p>
+      <a class="to-top" href="#top"><i class="fa-solid fa-arrow-up"></i> Back to top</a>
+    </footer>
+
+    <script>
+      // Theme toggle
+      const themeToggle = document.getElementById("themeToggle");
+      themeToggle.addEventListener("click", () => {
+        const current = document.documentElement.getAttribute("data-theme");
+        const next = current === "light" ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", next);
+        localStorage.setItem("theme", next);
+      });
+    </script>
+  </body>
+</html>
